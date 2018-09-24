@@ -5,6 +5,9 @@
 #[macro_use]
 extern crate log;
 
+#[macro_use]
+extern crate lazy_static;
+
 extern crate globset;
 extern crate solana_jsonrpc_core as core;
 extern crate bytes;
