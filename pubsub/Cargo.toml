@@ -1,10 +1,10 @@
 [package]
 description = "Publish-Subscribe extension for jsonrpc."
-homepage = "https://github.com/paritytech/jsonrpc"
-repository = "https://github.com/paritytech/jsonrpc"
+homepage = "https://github.com/solana-labs/jsonrpc"
+repository = "https://github.com/solana-labs/jsonrpc"
 license = "MIT"
-name = "jsonrpc-pubsub"
-version = "8.0.1"
+name = "solana-jsonrpc-pubsub"
+version = "0.1.0"
 authors = ["tomusdrw <tomasz@parity.io>"]
 keywords = ["jsonrpc", "json-rpc", "json", "rpc", "macros"]
 documentation = "https://paritytech.github.io/jsonrpc/jsonrpc_pubsub/index.html"
@@ -12,10 +12,10 @@ documentation = "https://paritytech.github.io/jsonrpc/jsonrpc_pubsub/index.html"
 [dependencies]
 log = "0.4"
 parking_lot = "0.6"
-jsonrpc-core = { version = "8.0", path = "../core" }
+solana-jsonrpc-core = { version = "0.1", path = "../core" }
 
 [dev-dependencies]
-jsonrpc-tcp-server = { version = "8.0", path = "../tcp" }
+solana-jsonrpc-tcp-server = { version = "0.1", path = "../tcp" }
 
 [badges]
-travis-ci = { repository = "paritytech/jsonrpc", branch = "master"}
+travis-ci = { repository = "solana-labs/jsonrpc", branch = "solana-0.1"}

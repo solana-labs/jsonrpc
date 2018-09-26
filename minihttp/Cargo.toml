@@ -1,18 +1,18 @@
 [package]
 description = "Blazing fast http server for JSON-RPC 2.0."
-homepage = "https://github.com/paritytech/jsonrpc"
-repository = "https://github.com/paritytech/jsonrpc"
+homepage = "https://github.com/solana-labs/jsonrpc"
+repository = "https://github.com/solana-labs/jsonrpc"
 license = "MIT"
-name = "jsonrpc-minihttp-server"
-version = "8.0.1"
+name = "solana-jsonrpc-minihttp-server"
+version = "0.1.0"
 authors = ["tomusdrw <tomasz@parity.io>"]
 keywords = ["jsonrpc", "json-rpc", "json", "rpc", "server"]
 documentation = "https://paritytech.github.io/jsonrpc/jsonrpc_minihttp_server/index.html"
 
 [dependencies]
 bytes = "0.4"
-jsonrpc-core = { version = "8.0", path = "../core" }
-jsonrpc-server-utils = { version = "8.0", path = "../server-utils" }
+solana-jsonrpc-core = { version = "0.1", path = "../core" }
+solana-jsonrpc-server-utils = { version = "0.1", path = "../server-utils" }
 log = "0.4"
 parking_lot = "0.6"
 tokio-minihttp = { git = "https://github.com/tomusdrw/tokio-minihttp" }
@@ -24,4 +24,4 @@ env_logger = "0.5"
 reqwest = "0.6"
 
 [badges]
-travis-ci = { repository = "paritytech/jsonrpc", branch = "master"}
+travis-ci = { repository = "solana-labs/jsonrpc", branch = "solana-0.1"}

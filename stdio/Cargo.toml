@@ -1,16 +1,16 @@
 [package]
-name = "jsonrpc-stdio-server"
+name = "solana-jsonrpc-stdio-server"
 description = "STDIN/STDOUT server for JSON-RPC"
 version = "0.1.0"
 authors = ["cmichi <mich@elmueller.net>"]
 license = "MIT"
-homepage = "https://github.com/paritytech/jsonrpc"
-repository = "https://github.com/paritytech/jsonrpc"
+homepage = "https://github.com/solana-labs/jsonrpc"
+repository = "https://github.com/solana-labs/jsonrpc"
 documentation = "https://paritytech.github.io/jsonrpc/jsonrpc_stdio_server/index.html"
 
 [dependencies]
 futures = "0.1.23"
-jsonrpc-core = { version = "8.0", path = "../core" }
+solana-jsonrpc-core = { version = "0.1", path = "../core" }
 log = "0.4"
 tokio = "0.1.7"
 tokio-codec = "0.1.0"
@@ -22,4 +22,4 @@ lazy_static = "1.0"
 env_logger = "0.5"
 
 [badges]
-travis-ci = { repository = "paritytech/jsonrpc", branch = "master"}
+travis-ci = { repository = "solana-labs/jsonrpc", branch = "solana-0.1"}

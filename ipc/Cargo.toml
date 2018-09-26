@@ -1,18 +1,18 @@
 [package]
-name = "jsonrpc-ipc-server"
+name = "solana-jsonrpc-ipc-server"
 description = "IPC server for JSON-RPC"
-version = "8.0.1"
+version = "0.1.0"
 authors = ["Nikolay Volf <nikvolf@gmail.com>"]
 license = "MIT"
-homepage = "https://github.com/paritytech/jsonrpc"
-repository = "https://github.com/paritytech/jsonrpc"
+homepage = "https://github.com/solana-labs/jsonrpc"
+repository = "https://github.com/solana-labs/jsonrpc"
 documentation = "https://paritytech.github.io/jsonrpc/json_ipc_server/index.html"
 
 [dependencies]
 log = "0.4"
 tokio-service = "0.1"
-jsonrpc-core = { version = "8.0", path = "../core" }
-jsonrpc-server-utils = { version = "8.0", path = "../server-utils" }
+solana-jsonrpc-core = { version = "0.1", path = "../core" }
+solana-jsonrpc-server-utils = { version = "0.1", path = "../server-utils" }
 parity-tokio-ipc = { git = "https://github.com/nikvolf/parity-tokio-ipc", branch = "stable" }
 parking_lot = "0.6"
 
@@ -24,4 +24,4 @@ lazy_static = "1.0"
 tokio-uds = "0.2"
 
 [badges]
-travis-ci = { repository = "paritytech/jsonrpc", branch = "master"}
+travis-ci = { repository = "solana-labs/jsonrpc", branch = "solana-0.1"}

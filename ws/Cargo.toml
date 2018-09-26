@@ -1,21 +1,21 @@
 [package]
-name = "jsonrpc-ws-server"
+name = "solana-jsonrpc-ws-server"
 description = "WebSockets server for JSON-RPC"
-version = "8.0.0"
+version = "0.1.0"
 authors = ["tomusdrw <tomasz@parity.io>"]
 license = "MIT"
-homepage = "https://github.com/paritytech/jsonrpc"
-repository = "https://github.com/paritytech/jsonrpc"
+homepage = "https://github.com/solana-labs/jsonrpc"
+repository = "https://github.com/solana-labs/jsonrpc"
 documentation = "https://paritytech.github.io/jsonrpc/json_ws_server/index.html"
 
 [dependencies]
 error-chain = "0.12"
-jsonrpc-core = { version = "8.0", path = "../core" }
-jsonrpc-server-utils = { version = "8.0", path = "../server-utils" }
+solana-jsonrpc-core = { version = "0.1", path = "../core" }
+solana-jsonrpc-server-utils = { version = "0.1", path = "../server-utils" }
 log = "0.4"
 parking_lot = "0.6"
 slab = "0.4"
 ws = { git = "https://github.com/tomusdrw/ws-rs" }
 
 [badges]
-travis-ci = { repository = "paritytech/jsonrpc", branch = "master"}
+travis-ci = { repository = "solana-labs/jsonrpc", branch = "solana-0.1"}
