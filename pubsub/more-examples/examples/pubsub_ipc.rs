@@ -1,6 +1,6 @@
-extern crate jsonrpc_core;
-extern crate jsonrpc_pubsub;
-extern crate jsonrpc_ipc_server;
+extern crate solana_jsonrpc_core as jsonrpc_core;
+extern crate solana_jsonrpc_pubsub as jsonrpc_pubsub;
+extern crate solana_jsonrpc_ipc_server as jsonrpc_ipc_server;
 
 use std::{time, thread};
 use std::sync::Arc;
@@ -76,4 +76,3 @@ impl SessionStats for Stats {
 		println!("Closing session: {}", id);
 	}
 }
-

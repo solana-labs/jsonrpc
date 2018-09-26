@@ -1,4 +1,4 @@
-extern crate jsonrpc_stdio_server;
+extern crate solana_jsonrpc_stdio_server as jsonrpc_stdio_server;
 
 use jsonrpc_stdio_server::ServerBuilder;
 use jsonrpc_stdio_server::jsonrpc_core::*;

@@ -1,8 +1,8 @@
 //! jsonrpc http server.
 //!
 //! ```no_run
-//! extern crate jsonrpc_core;
-//! extern crate jsonrpc_minihttp_server;
+//! extern crate solana_jsonrpc_core as jsonrpc_core;
+//! extern crate solana_jsonrpc_minihttp_server as jsonrpc_minihttp_server;
 //!
 //! use jsonrpc_core::*;
 //! use jsonrpc_minihttp_server::*;
@@ -20,13 +20,13 @@
 #![warn(missing_docs)]
 
 extern crate bytes;
-extern crate jsonrpc_server_utils;
+extern crate solana_jsonrpc_server_utils as jsonrpc_server_utils;
 extern crate parking_lot;
 extern crate tokio_proto;
 extern crate tokio_service;
 extern crate tokio_minihttp;
 
-pub extern crate jsonrpc_core;
+pub extern crate solana_jsonrpc_core as jsonrpc_core;
 
 #[macro_use]
 extern crate log;

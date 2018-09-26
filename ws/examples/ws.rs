@@ -1,4 +1,4 @@
-extern crate jsonrpc_ws_server;
+extern crate solana_jsonrpc_ws_server as jsonrpc_ws_server;
 
 use jsonrpc_ws_server::ServerBuilder;
 use jsonrpc_ws_server::jsonrpc_core::*;

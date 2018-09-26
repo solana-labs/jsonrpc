@@ -1,4 +1,4 @@
-extern crate jsonrpc_core;
+extern crate solana_jsonrpc_core as jsonrpc_core;
 
 use std::str::Lines;
 use std::net::TcpStream;

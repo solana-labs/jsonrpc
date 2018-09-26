@@ -1,4 +1,4 @@
-extern crate jsonrpc_http_server;
+extern crate solana_jsonrpc_http_server as jsonrpc_http_server;
 
 use jsonrpc_http_server::{
 	hyper, ServerBuilder, DomainsValidation, AccessControlAllowOrigin, Response, RestApi
@@ -27,4 +27,3 @@ fn main() {
 
 	server.wait();
 }
-

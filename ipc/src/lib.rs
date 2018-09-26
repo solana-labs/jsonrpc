@@ -2,12 +2,12 @@
 
 #![warn(missing_docs)]
 
-extern crate jsonrpc_server_utils as server_utils;
+extern crate solana_jsonrpc_server_utils as server_utils;
 extern crate parity_tokio_ipc;
 extern crate tokio_service;
 extern crate parking_lot;
 
-pub extern crate jsonrpc_core;
+pub extern crate solana_jsonrpc_core as jsonrpc_core;
 
 #[macro_use] extern crate log;
 

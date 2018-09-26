@@ -1,4 +1,4 @@
-extern crate jsonrpc_http_server;
+extern crate solana_jsonrpc_http_server as jsonrpc_http_server;
 
 use jsonrpc_http_server::{ServerBuilder, hyper, RestApi};
 use jsonrpc_http_server::jsonrpc_core::*;
@@ -38,4 +38,3 @@ fn main() {
 
 	server.wait();
 }
-

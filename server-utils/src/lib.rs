@@ -6,7 +6,7 @@
 extern crate log;
 
 extern crate globset;
-extern crate jsonrpc_core as core;
+extern crate solana_jsonrpc_core as core;
 extern crate bytes;
 
 pub extern crate tokio_core;
@@ -25,4 +25,3 @@ pub use matcher::Pattern;
 pub mod codecs {
     pub use stream_codec::{StreamCodec, Separator};
 }
-

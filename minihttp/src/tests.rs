@@ -1,4 +1,4 @@
-extern crate jsonrpc_core;
+extern crate solana_jsonrpc_core as jsonrpc_core;
 extern crate env_logger;
 extern crate reqwest;
 

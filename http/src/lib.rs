@@ -1,8 +1,8 @@
 //! jsonrpc http server.
 //!
 //! ```no_run
-//! extern crate jsonrpc_core;
-//! extern crate jsonrpc_http_server;
+//! extern crate solana_jsonrpc_core as jsonrpc_core;
+//! extern crate solana_jsonrpc_http_server as jsonrpc_http_server;
 //!
 //! use jsonrpc_core::*;
 //! use jsonrpc_http_server::*;
@@ -24,10 +24,10 @@
 #![warn(missing_docs)]
 
 extern crate unicase;
-extern crate jsonrpc_server_utils as server_utils;
+extern crate solana_jsonrpc_server_utils as server_utils;
 extern crate net2;
 
-pub extern crate jsonrpc_core;
+pub extern crate solana_jsonrpc_core as jsonrpc_core;
 pub extern crate hyper;
 
 #[macro_use]

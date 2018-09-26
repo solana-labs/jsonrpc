@@ -1,7 +1,7 @@
 //! jsonrpc server using stdin/stdout
 //!
 //! ```no_run
-//! extern crate jsonrpc_stdio_server;
+//! extern crate solana_jsonrpc_stdio_server as jsonrpc_stdio_server;
 //!
 //! use jsonrpc_stdio_server::ServerBuilder;
 //! use jsonrpc_stdio_server::jsonrpc_core::*;
@@ -25,7 +25,7 @@ extern crate tokio_io;
 extern crate tokio_stdin_stdout;
 #[macro_use] extern crate log;
 
-pub extern crate jsonrpc_core;
+pub extern crate solana_jsonrpc_core as jsonrpc_core;
 
 use std::sync::Arc;
 use tokio::prelude::{Future, Stream};

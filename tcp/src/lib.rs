@@ -1,8 +1,8 @@
 //! jsonrpc server over tcp/ip
 //!
 //! ```no_run
-//! extern crate jsonrpc_core;
-//! extern crate jsonrpc_tcp_server;
+//! extern crate solana_jsonrpc_core as jsonrpc_core;
+//! extern crate solana_jsonrpc_tcp_server as jsonrpc_tcp_server;
 //!
 //! use jsonrpc_core::*;
 //! use jsonrpc_tcp_server::ServerBuilder;
@@ -22,11 +22,11 @@
 
 #![warn(missing_docs)]
 
-extern crate jsonrpc_server_utils as server_utils;
+extern crate solana_jsonrpc_server_utils as server_utils;
 extern crate parking_lot;
 extern crate tokio_service;
 
-pub extern crate jsonrpc_core;
+pub extern crate solana_jsonrpc_core as jsonrpc_core;
 
 #[macro_use] extern crate log;
 

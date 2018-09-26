@@ -1,4 +1,4 @@
-extern crate jsonrpc_ipc_server;
+extern crate solana_jsonrpc_ipc_server as jsonrpc_ipc_server;
 
 use jsonrpc_ipc_server::jsonrpc_core::*;
 

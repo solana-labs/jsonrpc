@@ -1,7 +1,7 @@
-extern crate jsonrpc_core;
+extern crate solana_jsonrpc_core as jsonrpc_core;
 #[macro_use]
-extern crate jsonrpc_macros;
-extern crate jsonrpc_tcp_server;
+extern crate solana_jsonrpc_macros as jsonrpc_macros;
+extern crate solana_jsonrpc_tcp_server as jsonrpc_tcp_server;
 
 use std::collections::BTreeMap;
 

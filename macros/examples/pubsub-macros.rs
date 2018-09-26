@@ -1,8 +1,8 @@
-extern crate jsonrpc_core;
-extern crate jsonrpc_pubsub;
+extern crate solana_jsonrpc_core as jsonrpc_core;
+extern crate solana_jsonrpc_pubsub as jsonrpc_pubsub;
 #[macro_use]
-extern crate jsonrpc_macros;
-extern crate jsonrpc_tcp_server;
+extern crate solana_jsonrpc_macros as jsonrpc_macros;
+extern crate solana_jsonrpc_tcp_server as jsonrpc_tcp_server;
 
 use std::thread;
 use std::sync::{atomic, Arc, RwLock};

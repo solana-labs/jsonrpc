@@ -1,4 +1,4 @@
-extern crate jsonrpc_core;
+extern crate solana_jsonrpc_core as jsonrpc_core;
 
 use jsonrpc_core::*;
 use jsonrpc_core::futures::Future;

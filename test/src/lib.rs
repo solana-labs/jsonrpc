@@ -2,10 +2,10 @@
 //!
 //! ```
 //! #[macro_use]
-//! extern crate jsonrpc_macros;
+//! extern crate solana_jsonrpc_macros as jsonrpc_macros;
 //!
-//! extern crate jsonrpc_core as core;
-//! extern crate jsonrpc_test as test;
+//! extern crate solana_jsonrpc_core as core;
+//! extern crate solana_jsonrpc_test as test;
 //!
 //! use core::Result;
 //!
@@ -48,7 +48,7 @@
 
 #[warn(missing_docs)]
 
-extern crate jsonrpc_core as rpc;
+extern crate solana_jsonrpc_core as rpc;
 extern crate serde;
 extern crate serde_json;
 

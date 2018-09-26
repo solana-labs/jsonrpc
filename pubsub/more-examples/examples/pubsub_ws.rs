@@ -1,6 +1,6 @@
-extern crate jsonrpc_core;
-extern crate jsonrpc_pubsub;
-extern crate jsonrpc_ws_server;
+extern crate solana_jsonrpc_core as jsonrpc_core;
+extern crate solana_jsonrpc_pubsub as jsonrpc_pubsub;
+extern crate solana_jsonrpc_ws_server as jsonrpc_ws_server;
 
 use std::{time, thread};
 use std::sync::Arc;

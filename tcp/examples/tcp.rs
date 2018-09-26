@@ -1,4 +1,4 @@
-extern crate jsonrpc_tcp_server;
+extern crate solana_jsonrpc_tcp_server as jsonrpc_tcp_server;
 
 use jsonrpc_tcp_server::ServerBuilder;
 use jsonrpc_tcp_server::jsonrpc_core::*;
@@ -16,4 +16,3 @@ fn main() {
 
 	server.wait()
 }
-

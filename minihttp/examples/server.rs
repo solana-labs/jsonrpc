@@ -1,4 +1,4 @@
-extern crate jsonrpc_minihttp_server;
+extern crate solana_jsonrpc_minihttp_server as jsonrpc_minihttp_server;
 
 use jsonrpc_minihttp_server::{cors, ServerBuilder, DomainsValidation};
 use jsonrpc_minihttp_server::jsonrpc_core::*;
@@ -17,4 +17,3 @@ fn main() {
 
 	server.wait().unwrap();
 }
-

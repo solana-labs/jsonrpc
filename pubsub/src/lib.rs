@@ -2,7 +2,7 @@
 
 #![warn(missing_docs)]
 
-extern crate jsonrpc_core as core;
+extern crate solana_jsonrpc_core as core;
 extern crate parking_lot;
 
 #[macro_use]

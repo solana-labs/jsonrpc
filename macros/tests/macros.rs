@@ -1,8 +1,8 @@
 
 extern crate serde_json;
-extern crate jsonrpc_core;
+extern crate solana_jsonrpc_core as jsonrpc_core;
 #[macro_use]
-extern crate jsonrpc_macros;
+extern crate solana_jsonrpc_macros as jsonrpc_macros;
 
 use jsonrpc_core::{IoHandler, Response};
 

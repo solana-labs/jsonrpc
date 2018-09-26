@@ -1,8 +1,8 @@
 extern crate serde_json;
-extern crate jsonrpc_core;
-extern crate jsonrpc_pubsub;
+extern crate solana_jsonrpc_core as jsonrpc_core;
+extern crate solana_jsonrpc_pubsub as jsonrpc_pubsub;
 #[macro_use]
-extern crate jsonrpc_macros;
+extern crate solana_jsonrpc_macros as jsonrpc_macros;
 
 use std::sync::Arc;
 use jsonrpc_core::futures::sync::mpsc;

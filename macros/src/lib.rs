@@ -5,8 +5,8 @@
 //! Example
 //!
 //! ```
-//! extern crate jsonrpc_core;
-//! #[macro_use] extern crate jsonrpc_macros;
+//! extern crate solana_jsonrpc_core as jsonrpc_core;
+//! #[macro_use] extern crate solana_jsonrpc_macros as jsonrpc_macros;
 //! use jsonrpc_core::{IoHandler, Error, Result};
 //! use jsonrpc_core::futures::future::{self, FutureResult};
 //! build_rpc_trait! {
@@ -49,8 +49,8 @@
 
 #![warn(missing_docs)]
 
-pub extern crate jsonrpc_core;
-pub extern crate jsonrpc_pubsub;
+pub extern crate solana_jsonrpc_core as jsonrpc_core;
+pub extern crate solana_jsonrpc_pubsub as jsonrpc_pubsub;
 extern crate serde;
 
 mod auto_args;
