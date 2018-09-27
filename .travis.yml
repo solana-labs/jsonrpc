@@ -2,7 +2,6 @@ sudo: false
 language: rust
 branches:
   only:
-  - master
   - /^solana-.*$/
 
 cache: cargo
@@ -19,4 +18,16 @@ matrix:
 script:
   - cargo build --all
   - cargo test --all
-  
+
+deploy:
+  provider: releases
+  api-key:
+    secure: W5wJXNxyxUzzqzFbS7tIgBqLyKk4E2ihsw9FBrkxT6MCs+i/rKf8R68kAeeEIlXnJD3ZrgLUVrsdMGj1hNcAvzYqZwOfaG7CwYvMC6bkcswIj5lONiKMhbcmTOTXDMKV27SIM224k4z3Qo4daPgD8vVvrsvn8vIvrCC1YrXdXdsvenyO1dMNCVE+Qvt6j6Aa7vQ0R4d6baz4oA4j0tc1mJ1sMtqYEP6EHcfnMJpIuJw/0OoH/aBmfCTu5sZLfAXsHk5+xlJtXK15YNS2mfr/VzL+4vXJvJG2RxVSNHd91BjwsTIiklWXN1MltGuq1LWWmlXWEEOZ4F14Nt59WNXHRoVs6q9KjQZthQnP2RQZ/kJCuHwfK4HLJsmI5uYtlfLGcBOqxoQfP0aOmrkeyY5+VEjGY9NfPeCj+SwtRQETWJk9qrGHgBfGBnRWVC7aJ8O2OiYFiCbuib25dMZ0BbxNkigBc8xPiifH2IpPYI0KrgKeGwK0PHBh56aDbvQQSrodUVYcwzUDqOgl3UdrBNNR/mqD54Wt4frOB9u9saGIHH2OcHw1SM4Moj72HaBEWOxOaJOz7IxXlxgwzBBSG1Zln3SLy++gcbeppzWpm8zMHuNNEkjaAA1v0LKxkSV1lMcNd0jNOInmUk2yNq+KqjshPZi3EvSwQ4a0tR/oqUDxh3Q=
+  skip_cleanup: true
+  on:
+    tags: true
+    branch: /^solana-.*$/
+    condition: "$TRAVIS_RUST_VERSION = stable"
+
+after_deploy:
+  - ./ci/publish-crates.sh "$CRATES_IO_TOKEN"
