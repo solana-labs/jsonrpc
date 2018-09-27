@@ -10,20 +10,23 @@ homepage = "https://github.com/solana-labs/jsonrpc"
 repository = "https://github.com/solana-labs/jsonrpc"
 
 [dependencies]
+bytes = "0.4"
 globset = "0.4"
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 solana-jsonrpc-core = { version = "0.1", path = "../core" }
 lazy_static = "1.1.0"
 >>>>>>> 2189750... fixup! Allow specifying access rights for the IPC endpoint in jsonrpc-ipc-server. (#300)
-log = "0.4"
-solana-jsonrpc-core = { version = "0.1", path = "../core" }
-tokio-core = { version = "0.1" }
-tokio-io = { version = "0.1" }
-bytes = "0.4"
-hyper = "0.11"
-unicase = "2.0"
+=======
+solana-jsonrpc-core = { version = "9.0", path = "../core" }
 lazy_static = "1.1.0"
+>>>>>>> 4d29744... Update hyper to version 0.12. (#303)
+log = "0.4"
+num_cpus = "1.8"
+tokio = { version = "0.1" }
+tokio-codec = { version = "0.1" }
+unicase = "2.0"
 
 [badges]
 travis-ci = { repository = "solana-labs/jsonrpc", branch = "solana-0.1"}

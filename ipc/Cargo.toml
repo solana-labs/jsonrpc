@@ -13,7 +13,7 @@ log = "0.4"
 tokio-service = "0.1"
 solana-jsonrpc-core = { version = "0.1", path = "../core" }
 solana-jsonrpc-server-utils = { version = "0.1", path = "../server-utils" }
-parity-tokio-ipc = { git = "https://github.com/nikvolf/parity-tokio-ipc", branch = "stable" }
+parity-tokio-ipc = { git = "https://github.com/nikvolf/parity-tokio-ipc", rev = "306ea3e" }
 parking_lot = "0.6"
 
 [dev-dependencies]
