@@ -4,8 +4,8 @@ homepage = "https://github.com/solana-labs/jsonrpc"
 repository = "https://github.com/solana-labs/jsonrpc"
 license = "MIT"
 name = "solana-jsonrpc-core"
-version = "0.1.1"
-authors = ["debris <marek.kotewicz@gmail.com>"]
+version = "0.1.2"
+authors = ["Solana Labs <maintainers@solana.com>"]
 keywords = ["jsonrpc", "json-rpc", "json", "rpc", "serde"]
 documentation = "https://paritytech.github.io/jsonrpc/jsonrpc_core/index.html"
 

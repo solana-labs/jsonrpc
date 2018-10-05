@@ -1,8 +1,8 @@
 [package]
 name = "solana-jsonrpc-ipc-server"
 description = "IPC server for JSON-RPC"
-version = "0.1.1"
-authors = ["Nikolay Volf <nikvolf@gmail.com>"]
+version = "0.1.2"
+authors = ["Solana Labs <maintainers@solana.com>"]
 license = "MIT"
 homepage = "https://github.com/solana-labs/jsonrpc"
 repository = "https://github.com/solana-labs/jsonrpc"

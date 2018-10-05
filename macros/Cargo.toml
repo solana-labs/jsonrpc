@@ -4,8 +4,8 @@ homepage = "https://github.com/solana-labs/jsonrpc"
 repository = "https://github.com/solana-labs/jsonrpc"
 license = "MIT"
 name = "solana-jsonrpc-macros"
-version = "0.1.1"
-authors = ["rphmeier <robert@parity.io>"]
+version = "0.1.2"
+authors = ["Solana Labs <maintainers@solana.com>"]
 keywords = ["jsonrpc", "json-rpc", "json", "rpc", "macros"]
 documentation = "https://paritytech.github.io/jsonrpc/jsonrpc_macros/index.html"
 
