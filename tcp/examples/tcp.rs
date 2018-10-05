@@ -1,9 +1,11 @@
 extern crate solana_jsonrpc_tcp_server as jsonrpc_tcp_server;
+extern crate env_logger;
 
 use jsonrpc_tcp_server::ServerBuilder;
 use jsonrpc_tcp_server::jsonrpc_core::*;
 
 fn main() {
+	env_logger::init();
 	let mut io = IoHandler::default();
 	io.add_method("say_hello", |_params| {
 		println!("Processing");
