@@ -4,8 +4,8 @@ homepage = "https://github.com/solana-labs/jsonrpc"
 repository = "https://github.com/solana-labs/jsonrpc"
 license = "MIT"
 name = "solana-jsonrpc-minihttp-server"
-version = "0.1.1"
-authors = ["tomusdrw <tomasz@parity.io>"]
+version = "0.1.2"
+authors = ["Solana Labs <maintainers@solana.com>"]
 keywords = ["jsonrpc", "json-rpc", "json", "rpc", "server"]
 documentation = "https://paritytech.github.io/jsonrpc/jsonrpc_minihttp_server/index.html"
 

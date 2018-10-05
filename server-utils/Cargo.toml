@@ -1,8 +1,8 @@
 [package]
 description = "Server utils for jsonrpc-core crate."
 name = "solana-jsonrpc-server-utils"
-version = "0.1.1"
-authors = ["tomusdrw <tomasz@parity.io>"]
+version = "0.1.2"
+authors = ["Solana Labs <maintainers@solana.com>"]
 license = "MIT"
 keywords = ["jsonrpc", "json-rpc", "json", "rpc", "serde"]
 documentation = "https://paritytech.github.io/jsonrpc/jsonrpc_core/index.html"
