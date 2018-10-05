@@ -25,7 +25,7 @@ mod tests;
 use jsonrpc_core as core;
 
 pub use self::error::{Error, ErrorKind, Result};
-pub use self::metadata::{RequestContext, MetaExtractor, NoopExtractor};
+pub use self::metadata::{RequestContext, MetaExtractor, NoopExtractor, Sender};
 pub use self::session::{RequestMiddleware, MiddlewareAction};
 pub use self::server::{CloseHandle, Server};
 pub use self::server_builder::ServerBuilder;

@@ -642,4 +642,3 @@ wrap_with_trailing!(4, A, B, C, D);
 wrap_with_trailing!(3, A, B, C);
 wrap_with_trailing!(2, A, B);
 wrap_with_trailing!(1, A);
-
