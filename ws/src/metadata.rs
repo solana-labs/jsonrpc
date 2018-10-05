@@ -25,7 +25,8 @@ impl Sender {
 		}
 	}
 
-	fn check_active(&self) -> error::Result<()> {
+	/// Checks whether connection is still active
+	pub fn check_active(&self) -> error::Result<()> {
 		if self.active.load(atomic::Ordering::SeqCst) {
 			Ok(())
 		} else {
