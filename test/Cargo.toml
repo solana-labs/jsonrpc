@@ -2,7 +2,7 @@
 name = "solana-jsonrpc-test"
 description = "Simple test framework for JSON-RPC."
 version = "0.1.0"
-authors = ["Tomasz Drwięga <tomasz@parity.io>"]
+authors = ["Solana Labs <maintainers@solana.com>"]
 license = "MIT"
 homepage = "https://github.com/solana-labs/jsonrpc"
 repository = "https://github.com/solana-labs/jsonrpc"

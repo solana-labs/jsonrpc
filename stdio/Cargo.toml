@@ -1,8 +1,8 @@
 [package]
 name = "solana-jsonrpc-stdio-server"
 description = "STDIN/STDOUT server for JSON-RPC"
-version = "0.1.1"
-authors = ["cmichi <mich@elmueller.net>"]
+version = "0.1.2"
+authors = ["Solana Labs <maintainers@solana.com>"]
 license = "MIT"
 homepage = "https://github.com/solana-labs/jsonrpc"
 repository = "https://github.com/solana-labs/jsonrpc"
@@ -13,7 +13,7 @@ futures = "0.1.23"
 solana-jsonrpc-core = { version = "0.1", path = "../core" }
 log = "0.4"
 tokio = "0.1.7"
-tokio-codec = "0.1.1"
+tokio-codec = "0.1.2"
 tokio-io = "0.1.7"
 tokio-stdin-stdout = "0.1.4"
 
