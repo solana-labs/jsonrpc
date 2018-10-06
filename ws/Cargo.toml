@@ -15,7 +15,7 @@ solana-jsonrpc-server-utils = { version = "0.1", path = "../server-utils" }
 log = "0.4"
 parking_lot = "0.6"
 slab = "0.4"
-ws = { git = "https://github.com/tomusdrw/ws-rs" }
+solana-ws = "0.1"
 
 [badges]
 travis-ci = { repository = "solana-labs/jsonrpc", branch = "solana-0.1"}

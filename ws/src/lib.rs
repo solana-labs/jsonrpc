@@ -6,7 +6,7 @@ extern crate solana_jsonrpc_server_utils as server_utils;
 extern crate parking_lot;
 extern crate slab;
 
-pub extern crate ws;
+pub extern crate solana_ws as ws;
 pub extern crate solana_jsonrpc_core as jsonrpc_core;
 
 #[macro_use]
