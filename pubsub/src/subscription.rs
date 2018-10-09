@@ -183,7 +183,7 @@ impl Subscriber {
 pub fn new_subscription<M, F, G>(notification: &str, subscribe: F, unsubscribe: G) -> (Subscribe<F, G>, Unsubscribe<G>) where
 	M: PubSubMetadata,
 	F: SubscribeRpcMethod<M>,
-	G: UnsubscribeRpcMethod,
+	G: UnsubscribeRpcMethod<M>,
 {
 	let unsubscribe = Arc::new(unsubscribe);
 	let subscribe = Subscribe {
@@ -226,7 +226,7 @@ pub struct Subscribe<F, G> {
 impl<M, F, G> core::RpcMethod<M> for Subscribe<F, G> where
 	M: PubSubMetadata,
 	F: SubscribeRpcMethod<M>,
-	G: UnsubscribeRpcMethod,
+	G: UnsubscribeRpcMethod<M>,
 {
 	fn call(&self, params: core::Params, meta: M) -> BoxFuture<core::Value> {
 		match meta.session() {
@@ -239,7 +239,7 @@ impl<M, F, G> core::RpcMethod<M> for Subscribe<F, G> where
 					transport: session.sender(),
 					sender: tx,
 				};
-				self.subscribe.call(params, meta, subscriber);
+				self.subscribe.call(params, meta.clone(), subscriber);
 
 				let unsub = self.unsubscribe.clone();
 				let notification = self.notification.clone();
@@ -249,7 +249,7 @@ impl<M, F, G> core::RpcMethod<M> for Subscribe<F, G> where
 						futures::done(match result {
 							Ok(id) => {
 								session.add_subscription(&notification, &id, move |id| {
-									let _ = unsub.call(id).wait();
+									let _ = unsub.call(meta.clone(), id).wait();
 								});
 								Ok(id.into())
 							},
@@ -271,7 +271,7 @@ pub struct Unsubscribe<G> {
 
 impl<M, G> core::RpcMethod<M> for Unsubscribe<G> where
 	M: PubSubMetadata,
-	G: UnsubscribeRpcMethod,
+	G: UnsubscribeRpcMethod<M>,
 {
 	fn call(&self, params: core::Params, meta: M) -> BoxFuture<core::Value> {
 		let id = match params {
@@ -283,7 +283,7 @@ impl<M, G> core::RpcMethod<M> for Unsubscribe<G> where
 		match (meta.session(), id) {
 			(Some(session), Some(id)) => {
 				session.remove_subscription(&self.notification, &id);
-				Box::new(self.unsubscribe.call(id))
+				Box::new(self.unsubscribe.call(meta, id))
 			},
 			(Some(_), None) => Box::new(future::err(core::Error::invalid_params("Expected subscription id."))),
 			_ => Box::new(future::err(subscriptions_unavailable())),
