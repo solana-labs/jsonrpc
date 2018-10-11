@@ -1,7 +1,7 @@
 [package]
 name = "solana-jsonrpc-test"
 description = "Simple test framework for JSON-RPC."
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Solana Labs <maintainers@solana.com>"]
 license = "MIT"
 homepage = "https://github.com/solana-labs/jsonrpc"
@@ -9,9 +9,9 @@ repository = "https://github.com/solana-labs/jsonrpc"
 documentation = "https://paritytech.github.io/jsonrpc/jsonrpc_test/index.html"
 
 [dependencies]
-solana-jsonrpc-core = { path = "../core", version = "0.1" }
+solana-jsonrpc-core = { path = "../core", version = "0.2.0" }
 serde = "1.0"
 serde_json = "1.0"
 
 [dev-dependencies]
-solana-jsonrpc-macros = { path = "../macros", version = "0.1" }
+solana-jsonrpc-macros = { path = "../macros", version = "0.2.0" }

@@ -4,7 +4,7 @@ homepage = "https://github.com/solana-labs/jsonrpc"
 repository = "https://github.com/solana-labs/jsonrpc"
 license = "MIT"
 name = "solana-jsonrpc-pubsub"
-version = "0.1.3"
+version = "0.2.0"
 authors = ["Solana Labs <maintainers@solana.com>"]
 keywords = ["jsonrpc", "json-rpc", "json", "rpc", "macros"]
 documentation = "https://paritytech.github.io/jsonrpc/jsonrpc_pubsub/index.html"
@@ -12,10 +12,10 @@ documentation = "https://paritytech.github.io/jsonrpc/jsonrpc_pubsub/index.html"
 [dependencies]
 log = "0.4"
 parking_lot = "0.6"
-solana-jsonrpc-core = { version = "0.1", path = "../core" }
+solana-jsonrpc-core = { version = "0.2.0", path = "../core" }
 
 [dev-dependencies]
-solana-jsonrpc-tcp-server = { version = "0.1", path = "../tcp" }
+solana-jsonrpc-tcp-server = { version = "0.2.0", path = "../tcp" }
 
 [badges]
-travis-ci = { repository = "solana-labs/jsonrpc", branch = "solana-0.1"}
+travis-ci = { repository = "solana-labs/jsonrpc", branch = "solana-0.2"}

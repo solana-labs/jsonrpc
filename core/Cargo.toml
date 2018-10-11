@@ -4,7 +4,7 @@ homepage = "https://github.com/solana-labs/jsonrpc"
 repository = "https://github.com/solana-labs/jsonrpc"
 license = "MIT"
 name = "solana-jsonrpc-core"
-version = "0.1.2"
+version = "0.2.0"
 authors = ["Solana Labs <maintainers@solana.com>"]
 keywords = ["jsonrpc", "json-rpc", "json", "rpc", "serde"]
 documentation = "https://paritytech.github.io/jsonrpc/jsonrpc_core/index.html"
@@ -25,4 +25,4 @@ serde_json = "1.0"
 serde_derive = "1.0"
 
 [badges]
-travis-ci = { repository = "solana-labs/jsonrpc", branch = "solana-0.1"}
+travis-ci = { repository = "solana-labs/jsonrpc", branch = "solana-0.2"}

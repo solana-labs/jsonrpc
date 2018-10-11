@@ -4,15 +4,15 @@ homepage = "https://github.com/solana-labs/jsonrpc"
 repository = "https://github.com/solana-labs/jsonrpc"
 license = "MIT"
 name = "solana-jsonrpc-minihttp-server"
-version = "0.1.2"
+version = "0.2.0"
 authors = ["Solana Labs <maintainers@solana.com>"]
 keywords = ["jsonrpc", "json-rpc", "json", "rpc", "server"]
 documentation = "https://paritytech.github.io/jsonrpc/jsonrpc_minihttp_server/index.html"
 
 [dependencies]
 bytes = "0.4"
-solana-jsonrpc-core = { version = "0.1", path = "../core" }
-solana-jsonrpc-server-utils = { version = "0.1", path = "../server-utils" }
+solana-jsonrpc-core = { version = "0.2.0", path = "../core" }
+solana-jsonrpc-server-utils = { version = "0.2.0", path = "../server-utils" }
 log = "0.4"
 parking_lot = "0.6"
 tokio-minihttp = { git = "https://github.com/tomusdrw/tokio-minihttp" }
@@ -24,4 +24,4 @@ env_logger = "0.5"
 reqwest = "0.6"
 
 [badges]
-travis-ci = { repository = "solana-labs/jsonrpc", branch = "solana-0.1"}
+travis-ci = { repository = "solana-labs/jsonrpc", branch = "solana-0.2"}
