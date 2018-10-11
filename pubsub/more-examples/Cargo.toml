@@ -3,12 +3,12 @@ name = "jsonrpc-pubsub-examples"
 description = "Examples of Publish-Subscribe extension for jsonrpc."
 homepage = "https://github.com/solana-labs/jsonrpc"
 repository = "https://github.com/solana-labs/jsonrpc"
-version = "0.1.2"
+version = "0.2.0"
 authors = ["Solana Labs <maintainers@solana.com>"]
 license = "MIT"
 
 [dependencies]
-solana-jsonrpc-core = { version = "0.1", path = "../../core" }
-solana-jsonrpc-pubsub = { version = "0.1", path = "../" }
-solana-jsonrpc-ws-server = { version = "0.1", path = "../../ws" }
-solana-jsonrpc-ipc-server = { version = "0.1", path = "../../ipc" }
+solana-jsonrpc-core = { version = "0.2.0", path = "../../core" }
+solana-jsonrpc-pubsub = { version = "0.2.0", path = "../" }
+solana-jsonrpc-ws-server = { version = "0.2.0", path = "../../ws" }
+solana-jsonrpc-ipc-server = { version = "0.2.0", path = "../../ipc" }

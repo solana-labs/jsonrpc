@@ -4,15 +4,15 @@ homepage = "https://github.com/solana-labs/jsonrpc"
 repository = "https://github.com/solana-labs/jsonrpc"
 license = "MIT"
 name = "solana-jsonrpc-http-server"
-version = "0.1.2"
+version = "0.2.0"
 authors = ["Solana Labs <maintainers@solana.com>"]
 keywords = ["jsonrpc", "json-rpc", "json", "rpc", "server"]
 documentation = "https://paritytech.github.io/jsonrpc/jsonrpc_http_server/index.html"
 
 [dependencies]
 hyper = "0.12"
-solana-jsonrpc-core = { version = "0.1", path = "../core" }
-solana-jsonrpc-server-utils = { version = "0.1", path = "../server-utils" }
+solana-jsonrpc-core = { version = "0.2.0", path = "../core" }
+solana-jsonrpc-server-utils = { version = "0.2.0", path = "../server-utils" }
 log = "0.4"
 net2 = "0.2"
 unicase = "2.0"
