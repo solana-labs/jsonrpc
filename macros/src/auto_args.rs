@@ -210,7 +210,7 @@ macro_rules! build_rpc_trait {
 		subscribe: (name = $subscribe: expr $(, alias = [ $( $sub_alias: expr, )+ ])*)
 		fn $sub_method: ident (&self, Self::Metadata $(, $sub_p: ty)+);
 		unsubscribe: (name = $unsubscribe: expr $(, alias = [ $( $unsub_alias: expr, )+ ])*)
-		fn $unsub_method: ident (&self, Self::Metadata $(, $unsub_p: ty)+) -> $result: tt <$out: ty $(, $error_unsub: ty)* >;
+		fn $unsub_method: ident (&self $(, $unsub_p: ty)+) -> $result: tt <$out: ty $(, $error_unsub: ty)* >;
 	) => {
 		$del.add_subscription(
 			$name,
@@ -223,9 +223,9 @@ macro_rules! build_rpc_trait {
 					subscriber,
 				)
 			}),
-			($unsubscribe, move |base, meta, id| {
+			($unsubscribe, move |base, id| {
 				use $crate::jsonrpc_core::futures::{IntoFuture, Future};
-				Self::$unsub_method(base, meta, id).into_future()
+				Self::$unsub_method(base, id).into_future()
 					.map($crate::to_value)
 					.map_err(Into::into)
 			}),
