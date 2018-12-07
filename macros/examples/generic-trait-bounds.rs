@@ -1,7 +1,7 @@
 extern crate serde;
-extern crate jsonrpc_core;
+extern crate solana_jsonrpc_core as jsonrpc_core;
 #[macro_use]
-extern crate jsonrpc_macros;
+extern crate solana_jsonrpc_macros as jsonrpc_macros;
 
 use serde::de::DeserializeOwned;
 use jsonrpc_core::{IoHandler, Error, Result};
@@ -66,4 +66,3 @@ fn main() {
 	io.extend_with(Rpc::to_delegate(RpcImpl));
 	io.extend_with(Rpc2::to_delegate(RpcImpl));
 }
-
