@@ -2,6 +2,7 @@ language: rust
 branches:
   only:
   - /^solana-.*$/
+  - /v\d+(\.\d+){1,2}[a-z]{0,1}/
 
 cache: cargo
 
