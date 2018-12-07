@@ -1,7 +1,4 @@
 language: rust
-branches:
-  only:
-  - /^solana-.*$/
 
 cache: cargo
 
